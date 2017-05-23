@@ -19,7 +19,7 @@ fi
 
 if [ -f requirements.txt ]; then
     puts-step "Installing dependencies using Pip"
-    pip install -r requirements.txt  --exists-action=i --allow-all-external | indent
+    pip install -r requirements.txt  --exists-action=i | indent
 fi
 
 # Clean up the installation environment .
